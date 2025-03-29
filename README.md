@@ -1,119 +1,88 @@
-# Atlan SQL Editor (Frontend Internship Task 2025)
+# Atlan SQL Editor
 
-Live Project: [atlan-sql-editor](https://atlan-sql-editor-2wx049k4q-yash3456s-projects.vercel.app/)
+## Overview
 
-## 🚀 Overview
+Atlan SQL Editor is a web-based SQL playground that allows users to input, edit, and toggle between predefined SQL queries. It provides a mock environment for viewing query results in a user-friendly interface, simulating the experience of a basic SQL editor.
 
-This is a mock SQL editor created as part of the Atlan Frontend Internship Task 2025. It allows users to input SQL queries, toggle between predefined queries, and view dummy table data rendered in response. This frontend-only application simulates the experience of a basic SQL playground that a data analyst might use.
+## Features
 
-## 🧠 Core Features
+- **SQL Query Input**: Textarea for writing and editing SQL queries.
+- **Predefined Queries**: Dropdown to select from multiple hardcoded SQL queries.
+- **Mock Data Tables**: Displays dummy data tables associated with selected queries.
+- **Responsive UI**: Optimized for a seamless user experience.
+- **Lightweight Design**: Minimal dependencies for faster load times.
 
-- **Query Input Editor:** Textarea for writing custom SQL queries.
-- **Predefined Queries Dropdown:** Choose from multiple hardcoded SQL queries.
-- **Mock Data Tables:** Displays dummy data tables associated with the selected query.
-- **Snappy UI:** Built with responsiveness and user experience in mind.
-- **Minimal & Focused Design:** Streamlined layout for a distraction-free interface.
+## Technologies Used
 
-## 🔧 Tech Stack
+- **Frontend**: React.js (via Vite)
+- **Styling**: CSS Modules
+- **Deployment**: Vercel
 
-- **Framework:** React.js (via Vite)
-- **Styling:** CSS Modules
-- **Component Library:** None used to keep it minimal and dependency-free
-- **Deployment:** Vercel
+## Installation & Setup
 
-## 📦 Installed Dependencies
+### Prerequisites
 
-- React
-- React DOM
-- Vite (for bundling)
+- Node.js (>= 22)
+- Yarn or npm
 
-## 🕒 Load Time
+### Steps
 
-- **Initial Page Load Time:** ~500ms
-- **Measurement Tool:** Chrome DevTools > Performance tab
+1. **Clone the repository:**
 
-## ⚙️ Performance Optimizations
+   ```sh
+   git clone https://github.com/yourusername/atlan-sql-editor.git
+   cd atlan-sql-editor
+   ```
 
-- **Lazy Rendering:** Only the currently selected table is rendered.
-- **Minimal DOM Manipulation:** Optimized state handling and conditional rendering reduce unnecessary re-renders.
+2. **Install dependencies:**
 
-## 🖼️ Application Layout
+   ```sh
+   npm install
+   ```
 
-```
----------------------------------------------------
-| [Dropdown with Predefined Queries]             |
-|------------------------------------------------|
-| [SQL Input Textarea]                           |
-|                                                |
-|                                                |
-|------------------------------------------------|
-| [Result Table for Selected Query]              |
-|                                                |
----------------------------------------------------
-```
+3. **Run the application:**
 
-## 📁 Project Structure
+   ```sh
+   npm run dev
+   ```
 
-```
-src/
-├── components/
-│   ├── QueryEditor.jsx
-│   ├── QuerySelector.jsx
-│   └── ResultTable.jsx
-├── data/
-│   └── queries.js
-├── App.jsx
-├── main.jsx
-└── index.css
-```
+4. **Access the application:**
+   Open `http://localhost:3000` in your browser.
 
-## 🗂️ ER Diagram / Data Flow
+## Usage
 
-This application uses a simple flow:
+- Select a predefined query from the dropdown.
+- Edit the query in the SQL input area if needed.
+- View the mock results in the results table below.
 
-1. User selects a query from the dropdown.
-2. Associated SQL query text and data table update in real-time.
-3. SQL query is editable but not executed (mocked only).
+## Deployment
 
-_No actual database or ER diagram involved due to mock nature._
+To deploy the application, use Vercel or any static hosting service:
 
-## 🎥 Video Walkthrough
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+2. Deploy the `dist/` folder to your hosting platform.
 
-📹 [Link to Video Demo](#) — _Replace with actual video link_
+## Future Enhancements
 
-### Video Highlights:
+- Integrate Monaco Editor for advanced SQL editing.
+- Add syntax highlighting for better readability.
+- Support for dark mode.
+- Paginate large data tables for better performance.
+- Save query history and allow users to manage saved queries.
 
-- UI and user flow demonstration
-- Component structure walkthrough
-- Decisions on optimizations and layout
-- Challenges faced (like mock data toggling and table rendering)
+## Known Limitations
 
-## ❗ Known Limitations
+- No backend or actual SQL execution engine.
+- Query syntax is not validated.
+- Mock data is static and not tied to query logic.
 
-- No backend or SQL execution engine
-- Query syntax not validated
-- Mock data not tied to query logic
+## Contact
 
-## ✅ Possible Improvements
-
-- Integrate Monaco Editor for richer SQL input
-- Add support for dark mode
-- Paginate large data tables
-- Highlight syntax using a library like `react-syntax-highlighter`
-
-## 💬 Challenges Faced
-
-- Balancing simplicity and responsiveness
-- Managing clean state updates for query and data sync
-- Ensuring table rendering doesn’t lag on toggle
-
-## 📝 Submission Checklist
-
-- [x] Hosted live version on Vercel
-- [x] Shared GitHub repo link
-- [x] Included README and video walkthrough
-- [x] Clean, well-structured React codebase
+For any issues or suggestions, please open an issue on the repository or reach out at goyalyash311@gmail.com.
 
 ---
 
-Made with 💙 for the Atlan Frontend Internship Task
+Made with 💙 for the Atlan Frontend Internship Task 2025 by Yash Goyal.
