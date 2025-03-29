@@ -8,9 +8,11 @@ Atlan SQL Editor is a web-based SQL playground that allows users to input, edit,
 
 - **SQL Query Input**: Textarea for writing and editing SQL queries.
 - **Predefined Queries**: Dropdown to select from multiple hardcoded SQL queries.
-- **Mock Data Tables**: Displays dummy data tables associated with selected queries.
+- **Mock Data Tables**: Displays dummy data in tables and charts associated with selected queries.
 - **Responsive UI**: Optimized for a seamless user experience.
 - **Lightweight Design**: Minimal dependencies for faster load times.
+- **Performance Analyser**: A Section to analyse the Query time.
+- **Query History**: Displays and Searches past queries made by User.
 
 ## Technologies Used
 
